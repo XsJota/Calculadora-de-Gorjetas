@@ -64,7 +64,7 @@ body {
     background: red;
     color: white;
 }
-.totalTip {
+#totalTip {
     font-size: 20px;
     margin-top: 40px;
     text-align: center;
