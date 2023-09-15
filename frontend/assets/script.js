@@ -3,8 +3,12 @@ function calculateTips(event) {
     let bill = document.getElementById('bill').value;
     let serviceQual = document.getElementById('serviceQual').value;
     let amountPeoples = document.getElementById('amountPeoples').value
-    if (bill === "" || serviceQual === 0) {
-       alert("Preencha os campos vazios!");
+    if (bill == "" || serviceQual == 0) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Preencha os campos vazios!',
+          })
        return;
     }
     if (amountPeoples > 1){
