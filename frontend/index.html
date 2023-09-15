@@ -29,18 +29,18 @@
                 <p>
                     <select name="serviceQual" id="serviceQual" class="formSelected" required>
                         <option value="0">--Escolha uma opção</option>
-                        <option value="">30% - Excelente</option>
-                        <option value="">20% - Incível</option>
-                        <option value="">15% - Bom</option>
-                        <option value="">10% - Aceitável</option>
-                        <option value="">0% - Ruim</option>
+                        <option value="0.3">30% - Excelente</option>
+                        <option value="0.2">20% - Incível</option>
+                        <option value="0.15">15% - Bom</option>
+                        <option value="0.1">10% - Aceitável</option>
+                        <option value="0.05">5% - Ruim</option>
                     </select>
                 </p>
                 <label for="amountPeoples">
                     <p class="questionForm">Quantas pessoas dividirão a conta?</p>
                 </label>
                 <p>
-                    <input type="number" name="amountPeoples" placeholder="0" id="amountPeoples" class="formInput" min="0" required> pessoas(s)
+                    <input type="number" name="amountPeoples" placeholder="0" id="amountPeoples" class="formInput" min="1" required> pessoas(s)
                 </p>
                 <button type="submit" class="formSubmit" id="calculated">Calcular</button>
             </form>
