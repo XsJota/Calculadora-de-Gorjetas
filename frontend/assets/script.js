@@ -13,6 +13,9 @@ function calculateTips(event) {
     }
     if (amountPeoples > 1){
         document.getElementById('each').style.display = "block";
+    }else {
+        document.getElementById('each').style.display = "none";
+
     }
     let total = (bill * serviceQual) / amountPeoples;
     total = total.toFixed(2)
